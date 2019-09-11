@@ -107,7 +107,7 @@ body {
 	margin-top: 60px;
 }
 
-.mid-section h2 {
+h2 {
 	color: #FFCC66;
 }
 
@@ -284,3 +284,23 @@ footer {
 		padding-left: 2rem;
 	}
 }*/
+
+
+
+.artwork {
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+	.artwork {
+		max-width: 75%;
+	}
+}
+
+.row-listen {
+	background-color: #F5F5F5;
+}
+
+.soundsgood {
+	min-height:200px;
+}
