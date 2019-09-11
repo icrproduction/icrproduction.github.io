@@ -304,3 +304,123 @@ footer {
 .soundsgood {
 	min-height:200px;
 }
+
+.artist-link:hover{
+	text-decoration: none;
+}
+
+.artist-link:hover h2{
+	color: #D18B00;
+}
+
+#equipment-button {
+	border: none;
+}
+
+#equipment-button:before {
+	content: "   ";
+	background-color: aqua;
+}
+
+.equipment-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.equipment-tab { /* our rectangle */
+	  position: relative;
+	  display: block;
+	  background-color: #454545;
+	  padding: 0.75rem 0.875rem;
+	  width: 100%;
+	  color: white;
+	  margin-top: 0.125em;
+	}
+
+.equipment-tab.active {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	#equipment-collapse {
+		display: block;
+		height: auto !important;
+		visibility: visible;
+	}
+	
+	.equipment-list {
+		display: block;
+		margin-left: 3rem;
+	}
+	
+	.equipment-tab { /* our rectangle */
+	  position: relative;
+	  display: block;
+	  background-color: #454545;
+	  padding: 0.75rem 0.875rem;
+	  color: white;
+	  margin-top: 0.125em;
+	  margin-left: -0.5em;
+	}
+
+	.equipment-tab.active { /* our rectangle */
+		display: block;
+	  height:50px;
+	  background-color: #FFCC66;
+	  position: relative;
+	  border-radius:0!important;
+	}
+
+	.equipment-tab.active:after { /*  our pseudo-element */
+	  content:"";/* required */
+	  position: absolute; /* takes the 'cap' out off flow */
+	  top:0; /* stick it to top edge of the sign */
+	  right:100%; /* push it way overto the right*/
+	  height:0; /* we're doing this with borders remember */
+	  width:0; 
+	  border-width: 25px;
+	  border-style:solid;
+	  border-color:#FFCC66; /* same as bg of our rectangle */
+	  /* now we make some of theborders disappear*/
+	  border-top-color:transparent;
+	  border-bottom-color:transparent;
+	  border-left-color:transparent;
+	}
+
+	.equipment-list>li:first-child{
+		margin-top: 0;
+	}
+}
+
+.equipment-table td, .equipment-table th {
+	border: none;
+}
+
+a {
+	color: #FFCC66;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #D18B00;
+}
+
+@media only screen and (max-width:810px) and (min-width: 768px) {
+	.equipment-panel {
+		margin-left: -25px;
+	}
+	
+	.equipment-list {
+		margin-right: -25px;
+	}
+	.equipment-tab {
+		width: 120%;
+	}
+}
+
+

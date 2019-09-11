@@ -14,7 +14,7 @@
   <body>
   	<!-- body code goes here -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-		<a class="navbar-brand" href="test-index.html"><img alt="ICR Production Logo" src="images/logo.gif" height="30" /></a>
+		<a class="navbar-brand" href="#"><img alt="ICR Production Logo" src="images/logo.gif" height="30" /></a>
        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        		<span class="navbar-toggler-icon"></span>
 		</button>
@@ -39,47 +39,73 @@
       	</div>
     </nav>
 	  
-<div class="row top-bar mx-3">
-  <div class="col-md-5 col-lg-5 p-0 img-overlap"><img src="images/pt-keyboard.jpg" alt=""/></div>
-	    <div class="col-md-7 col-lg-7 text-white pt-3 pb-5 d-flex">
-			<div class="my-auto">
-		  		<h1>Tell Us about Your Project</h1>
-				<h5>We will do our best to contact you in the shortest delays.</h5>
-				</div>
-		  </div>
-  		</div>
-	  
-	  <div class="row mx-3 create-form mt-3 mt-md-0">
-	  	<div class="col-md-5 col-lg-5"></div>
-		<div class="col-lg-7 pt-2">
-		  <form>
-		    <div class="form-group">
-		      <input type="text" class="form-control" id="nameForm" placeholder="Name">
-		      </div>
-		    <div class="form-group">
-		      <input type="email" class="form-control" id="emailForm" placeholder="Imperial College Mail">
-	        </div>
-		    <div class="form-group">
-		      <select class="form-control" id="sel1">
-				<option>Audio Recording</option>
-				<option>Music Production</option>
-				<option>Video Scoring</option>
-				<option>Live Audio</option>
-			  </select>
-	        </div>
-	      </form>
-        </div>
+  <div class="container-fluid">
+	  <div class="row">
+		  <div class="col-9 mx-5 p-0">
+			  <h1>Equipment</h1>
+				<h3>The right gear to fit all your projects.</h3>
+			  </div>
 	  </div>
-	  <div class="row mx-3 pt-2 pl-lg-3">
-	  <div class="col-lg-12">
-		  <form>
-		  <div class="form-group">
-		  	<textarea class="form-control" rows="5" id="comment" placeholder="Briefly describe your project"></textarea>
-		  </div>
-		    <button type="submit" class="btn btn-outline-primary">Submit</button>
-		  </form>
-		  </div>
 	  </div>
+<div class="row mx-5 mt-5">
+      <div class="order-2 order-md-0 col-md-9 p-0">
+	      <div class="shadow equipment-panel p-4">
+			  <h4>Microphones</h4>
+			  <button type="button" class="btn btn-outline-primary m-2">Download</button>
+			  <div class="mt-2">
+			  <table class="table equipment-table">
+				  <thead>
+					<tr>
+					  <th scope="col">Manufacturer</th>
+					  <th scope="col">Model No.</th>
+					  <th scope="col">Quantity</th>
+					  <th scope="col">Use</th>
+					  <th scope="col">Doc link</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">AKG</th>
+					  <td>C414 XLS</td>
+					  <td>2</td>
+					  <td>Great for vocals</td>
+					  <td><a href="#">Documentation</a></td>
+					</tr>
+					<tr>
+					  <th scope="row">Audio-Technica</th>
+					  <td>AT4033a</td>
+					  <td>4</td>
+					  <td>Vocals and Guitars</td>
+					  <td><a href="#">Documentation</a></td>
+					</tr>
+					<tr>
+					  <th scope="row">Electrovoice</th>
+					  <td>RE20</td>
+					  <td>1</td>
+					  <td>Great for vocals</td>
+					  <td><a href="#">Documentation</a></td>
+					</tr>
+					<tr>
+					  <th scope="row">Sennheiser</th>
+					  <td>E901</td>
+					  <td>1</td>
+					  <td>—</td>
+					  <td><a href="#">Documentation</a></td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</div>
+	    </div>
+	  	<button type="button" id="equipment-button" class="d-md-none equipment-tab text-left" data-toggle="collapse" data-target="#equipment-collapse"><div class="d-flex justify-content-between">Microphones<i class="fas fa-caret-down lead"></i></div></button>
+	    <div id="equipment-collapse" class="col-md-3 collapse">
+          <ul class="equipment-list">
+			  <li class="equipment-tab active" data-link="modals/microphones.html">Microphones</li>
+			  <li class="equipment-tab" data-link="modals/instruments.html">Instruments</li>
+			  <li class="equipment-tab">Other</li>
+	  		</ul>
+	    </div>
+  </div>
 <div class="row top-buffer"></div>
 	  
 	  <footer>
@@ -119,5 +145,8 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/popper.min.js"></script> 
 	<script src="js/bootstrap-4.0.0.js"></script>
+	  
+	<!-- Personal scripts -->
+	<script src="js/icrproduction.min.js"></script>
   </body>
 </html>
