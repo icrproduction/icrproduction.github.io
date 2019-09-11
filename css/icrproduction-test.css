@@ -18,8 +18,12 @@ body {
 	width: 100%;
 	object-fit: cover;
 	-o-object-fit: cover;
-	padding-left: 30px;
-	padding-right: 30px;
+}
+
+.shadow {
+	-webkit-box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.4);
+	box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.4);
 }
 
 
@@ -41,7 +45,19 @@ body {
 	font-size: 20px;
 }
 
-@media only screen and (min-width: 575px) {
+@media only screen and (min-width: 370px) {
+  .main-img .caption h1 {
+	font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .main-img .caption h1 {
+	font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
   .main-img .caption h1 {
 	font-size: 35px;
   }
@@ -52,7 +68,7 @@ body {
 		height: 456px;
 	}
 	.main-img .caption h1{
-		font-size: 50px;
+		font-size: 57px;
 	}
 }
 
@@ -79,9 +95,93 @@ body {
 	}
 }
 
-.row1 {
+.colour-row {
 	background-color: #FFCC66;
 	min-height: 200px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	
+}
+
+.top-buffer {
+	margin-top: 60px;
+}
+
+.mid-section h2 {
+	color: #FFCC66;
+}
+
+.btn-outline-primary {
+	border-color: #FFCC66;
+	color: #FFCC66;
+}
+
+.btn-outline-primary:hover {
+	background-color: #FFCC66;
+	border-color: #FFCC66;
+}
+
+.btn-outline-primary:active {
+	background-color: #FFCC66 !important;
+	border-color: #FFCC66 !important;
+}
+
+.project-text {
+	line-height: 1.8em;
+}
+
+.service-card img{
+	height: 400px;
+	width: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+}
+
+.service-card .caption {
+	position: absolute;
+	top: 0;
+	left: 1em;
+	bottom: 0;
+	right: 1em;
+	color: #FFFFFF;
+}
+
+.colour-bar-services {
+	position: absolute;
+	z-index: -1;
+	height: 50%;
+	width: calc(100% - 2.875rem);
+	background-color: #FFCC66;
+}
+
+@media only screen and (min-width: 768px) {
+	.service-card {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	
+}
+
+footer {
+	min-height: 100px;
+	background-color: #FBFBFB
+}
+
+.footer-mail {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+	background-color: rgba(0,0,0,0.00);
+	border-bottom-color: #353A3F;
+}
+.statement p {
+	font-size: 11px;
+}
+
+.fab {
+	color: #343a40;
+}
+.fab:hover {
+	color: #23272b;
 }
