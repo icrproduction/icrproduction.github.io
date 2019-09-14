@@ -26,6 +26,11 @@ body {
 	box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.4);
 }
 
+.small-shadow {
+	-webkit-box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.1);
+}
 
 .main-img .caption {
 	position: absolute;
@@ -424,3 +429,29 @@ a:hover{
 }
 
 
+
+.project-card {
+	border-radius: 0.25em;
+	background-color: #FBFBFB;
+	color: black;
+}
+
+.project-card:hover .project-title>h5 {
+	text-decoration: underline;
+}
+.project-card img {
+	border-top-left-radius: 0.25em;
+	border-top-right-radius: 0.25em;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}

@@ -1,90 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ICR Production</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="//localhost:8888/Dreamweaver_Website/" target="_blank">
+    <title>ICR Production — 404</title>
+    
     <!-- Bootstrap -->
-	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-	<link href="css/icrproduction-test.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
-	<link href="css/all.css" rel="stylesheet">
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+    <link href="css/icrproduction-test.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
   </head>
+  
   <body>
-  	<!-- body code goes here -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-		<a class="navbar-brand" href="test-index.html"><img alt="ICR Production Logo" src="images/logo.gif" height="30" /></a>
-       	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-       		<ul class="navbar-nav ml-auto">
-           		<li class="nav-item">
-           	   		<a class="nav-link" href="#">Create</a>
-           		</li>
-           		<li class="nav-item">
-           			<a class="nav-link" href="#">Discover</a>
-           		</li>
-				<li class="nav-item">
-          			<a class="nav-link" href="equipment.html">Equipment</a>
-          		</li>
-				<li class="nav-item">
-           			<a class="nav-link" href="newsletter.html">Newsletter</a>
-           		</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Documentation</a>
-				</li>
-     	  	</ul>
-      	</div>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" title="ICR Production" target="_self" href="">
+        <img alt="ICR Production Logo" src="images/logo.gif" height="40" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+		        <a class="nav-link" title="Create" target="_self" href="create">Create</a>
+          </li>
+          <li class="nav-item">
+		        <a class="nav-link" title="Discover" target="_self" href="discover">Discover</a>
+          </li>
+          <li class="nav-item">
+		        <a class="nav-link" title="Gear" target="_self" href="gear">Gear</a>
+          </li>
+          <li class="nav-item">
+		        <a class="nav-link" title="Newsletter" target="_self" href="newsletter">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" title="Documentation" target="_self" href="documentation">Documentation</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+    <a id="top"></a>
+    
+    <!-- Alert ICMail Modal -->
+		<div class="modal fade bd-example-modal-sm" id="alertICMailModal" tabindex="-1" role="dialog" aria-labelledby="alertICMailModal" aria-hidden="true">
+  		<div class="modal-dialog modal-sm">
+    		<div class="modal-content">
+     			<div class="modal-header">
+        		<h5 class="modal-title"><i class="fas fa-exclamation-triangle"></i> Warning!</h5>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          		<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<div class="modal-body">
+        		<p>Please enter a valid email address.</p>
+     		 </div>
+    		</div>
+  		</div>
+		</div>
 	  
-	 <div class="row p-5" style="min-height: 300px">
+	 	<div class="row m-4" style="min-height: 300px">
 	  	<div class="col-12 text-center my-auto">
 		 	<h1><b>404</b> <i class="fas fa-exclamation"></i></h1>
 			<h4>We couldn't find what you're looking for.</h4>
 		 </div>
 	  </div> 
 	  
-	 
-<div class="row top-buffer"></div>
-	  
-	  <footer>
-	    <div class="container-fluid">
-		  <div class="row px-5">
-			  <div class="col-md-5 col-lg-5 mt-3">
-				  <h5>Newsletter</h5>
-				  <div class="form-group d-flex">
-				  <input type="email" class="form-control mr-5 footer-mail" id="inputNewsletter" aria-describedby="emailHelp" placeholder="Imperial College Mail">
-				  <button type="submit" class="btn btn-dark">JOIN</button>
-					</div>
-			  	</div>
-			  <div class="offset-md-2 col-md-5 offset-lg-2 col-lg-5 mt-3">
-			    <h5>Follow Us</h5>
-				  <h3><a href="#"><i class="fab fa-facebook px-2"></i></a>
-					  <a href="#"><i class="fab fa-instagram px-2"></i></a>
-				  	  <a href="#"><i class="fab fa-youtube px-2"></i></a>
-				  	  <a href="#"><i class="fab fa-twitter px-2"></i></a>
-				  	  <a href="#"><i class="fab fa-spotify px-2"></i></a></h3>
-		    </div>
-		  </div>
-		  <div class="row text-center">
-			  <div class="col-lg-12 mt-5 statement">
-				  <p>© 2019 ICR Production. All rights reserved.
-				  <br />All enquiries: Lancelot Blanchard — icrproduction (at) ic.ac.uk</p>
-			  </div>
-		  </div>
-		  <div class="row mb-2">
-			<div class="col-6 d-flex"><img src="images/logo.gif" class="ml-auto" width="auto" height="30" alt=""/></div>
-			<div class="col-6 d-flex"><img src="images/icradio-logo.gif" class="mr-auto" width="auto" height="30" alt=""/></div>
-		  </div>
+    
+    <div class="row top-buffer"></div>
+    
+    
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row px-5">
+          <div class="col-md-5 col-lg-5 mt-3">
+            <h5>Newsletter</h5>
+            <div class="form-group d-flex">
+            	<strong class="pl-2 pt-2 thanks-newsletter d-none">Thanks for joining up, we'll be in touch soon.</strong>
+              <input type="email" class="form-control mr-5 footer-mail" id="inputNewsletter" aria-describedby="inputNewsletter" placeholder="Email Address">
+              <button type="button" class="btn btn-dark btn-newsletter">JOIN</button>
+            </div>
+          </div>
+          <div class="offset-md-2 col-md-5 offset-lg-2 col-lg-5 mt-3">
+            <h5>Follow Us</h5>
+            <h3>
+              <a href="https://www.facebook.com/ICRProductionUK" title="Follow Us on Facebook" target="_blank">
+              	<i class="fab fa-facebook px-2"></i>
+              </a>
+              <a href="https://www.instagram.com/ICRProduction" title="Follow Us on Instagram" target="_blank">
+              	<i class="fab fa-instagram px-2"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCO5c3VPG8YritFwg2iZK0eg" title="Follow Us on YouTube" target="_blank">
+              	<i class="fab fa-youtube px-2"></i>
+              </a>
+              <a href="https://www.twitter.com/ICRProduction" title="Follow Us on Twitter" target="_blank">
+              	<i class="fab fa-twitter px-2"></i>
+              </a>
+              <a href="https://open.spotify.com/user/ls6lyr5yialfbegjweliv065i?si=kmHbBOD0Tsi_vBf7lvzcjQ" title="Follow Us on Spotify" target="_blank">
+              	<i class="fab fa-spotify px-2"></i>
+              </a>
+            </h3>
+          </div>
         </div>
-	  </footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.2.1.min.js"></script>
-
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.0.0.js"></script>
+        <div class="row text-center">
+          <div class="col-lg-12 mt-5 statement">
+            <p>© 2019 ICR Production. All rights reserved.
+              <br />All enquiries: Lancelot Blanchard — icrproduction (at) ic.ac.uk
+            </p>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-6 d-flex">
+            <img src="images/logo.gif" class="ml-auto" width="auto" height="30" alt="ICR Production Logo" />
+          </div>
+          <div class="col-6 d-flex">
+            <a href="http://www.icradio.com" title="ICRadio Website" target="_blank">
+            	<img src="images/icradio-logo.gif" class="mr-auto" width="auto" height="30" alt="ICRadio Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+    
+    <!-- Personal scripts -->
+    <script src="js/icrproduction.min.js"></script>
+    
   </body>
+  
 </html>
