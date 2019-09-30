@@ -171,6 +171,12 @@ a:hover{
 	right: 1em;
 	color: #FFFFFF;
 }
+.get-involved img {
+  width: 100%;
+	height: 400px;
+	object-fit: cover;
+	-o-object-fit: cover;
+}
 
 /* CREATE PAGE */
 .top-bar {
