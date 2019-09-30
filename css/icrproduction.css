@@ -115,10 +115,10 @@ a:hover{
 }
 .colour-behind {
 	left: 0;
-	bottom: 0;
+	top: 30%;
 	z-index: -1;
 	width: 100%;
-	height: 50%;
+	height: 30%;
 	background-color: #FFCC66;
 }
 .project{
