@@ -405,9 +405,6 @@ a:hover{
 		margin-top: 2.7vw;
 		margin-bottom: 2.7vw;
 	}
-	.bottom-form {
-		margin-top: 5vw;
-	}
   
   /* PROJECT PAGE min-width: 992px */
   .artwork {
@@ -423,4 +420,11 @@ a:hover{
   .hero-img .caption h1{
     font-size: 5rem;
   }
+}
+
+@media only screen and (min-width: 1500px) {
+	/* CREATE PAGE min-width: 1500px */
+	.bottom-form {
+		margin-top: 5vw;
+	}
 }
