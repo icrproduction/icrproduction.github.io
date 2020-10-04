@@ -42,6 +42,21 @@ footer {
 }
 
 /* MODIFYING BOOTSTRAP RULES */
+.btn-primary {
+	background-color: #FFCC66;
+	color: white;
+	border-color: #FFCC66;
+}
+.btn-primary:hover {
+	background-color: #D18B00;
+	color: white;
+	border-color: #D18B00;
+}
+.btn-primary:active {
+	background-color: #D18B00 !important;
+	color: white !important;
+	border-color: #D18B00 !important;
+}
 .btn-outline-primary {
 	border-color: #FFCC66;
 	color: #FFCC66;
